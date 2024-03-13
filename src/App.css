@@ -1,0 +1,47 @@
+body{
+  background-color:white;
+  color:#000000  ;
+
+}
+
+.movie-app{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-app > .row{
+  
+  overflow-x: auto;
+  flex-wrap: nowrap;
+
+}
+
+
+.image-container{
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.overlay{
+  position: absolute;
+  background: white;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.image-container:hover  .overlay{
+  opacity: 1;
+}
